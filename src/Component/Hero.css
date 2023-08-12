@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.heroContainer{
+    background-image: url('/public/heroBg.png');
+    height: calc(100vh - 72px);
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(17, 21, 94, 0.879);
+}
+
+.heroLeft{
+    color: white;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.heroTitle{
+    font-size: 2.8rem;
+    line-height: 32px;
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.heroLeftClaim{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.heroLeftClaim > p{
+    font-size: 1.5rem;
+    line-height: 32px;
+    /* font-weight: 400; */
+    margin-left: 50px;
+}
+.heroLeftClaim > p > span{
+    color: #0096FF;
+    font-weight: 500;
+}
+
+.heroTitlePerYear{
+    color: #0096FF;
+}
+
+.heroTitleWorth{
+    /* text-decoration-line: line-through; */
+    text-decoration: line-through;
+    text-decoration-color: #FF0000;
+}
+
+.heroRight{
+    height: 90%;
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.signUpSubscribeContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SignUpContainer,.SubscribeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.subscribeCircle, .signupCircle{
+    background-color: #0096FF;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 6px;
+    color: white;
+    font-weight: 400;
+}
+
+.signUp{
+    color: #3C4852;
+    font-size: 12px;
+}
+
+.heroRightTitle{
+    color: #3C4852;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.subscribeCardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 0.4px;
+}
+
+.subscribeCard{
+    display: flex;
+    border: 2px solid #BEBEBE;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    color: #3C4852;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #BEBEBE;
+    border-radius: 100%;
+}
+
+.circle.expired{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.circleExpired{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: #BEBEBE;
+}
+
+.subscribeCardLeft{
+    display: flex;
+    gap: 10px;
+}
+
+.subscribeCardRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribeCardLeftText{
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.subscribeCardRightText{
+    font-size: 12px;
+    
+    font-weight: 400;
+}
+
+.subscribeCardRightPrice{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subscribeCardRightMonth{
+    font-size: 10px;
+    color: #BEBEBE;
+}
+
+.sugession{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    font-size: 8px;
+    font-weight: 500;
+    color: white;
+    background-color: #47BA68;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 01px 20px;
+}
+
+.subscribeCard.disable{
+    background-color: #E7E7E7;
+    color: #BEBEBE;
+}
+
+.subscribeCard.selectedCard{
+    background-color: #D7EDDD;
+    border: 2px solid #47BA68;
+}
+
+.subscribeCard.disable > .sugession{
+    background-color: #F77171;
+    color: white;
+}
+
+hr{
+    height: 1.5px;
+    background-color: #BEBEBE;
+    border: none;
+    margin-top: 15px;
+}
+
+.subscriptionFeeContainer{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    color: #3C4852;
+}
+
+.subscriptionFeeContainerPrice{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.limitedOfferContainerHeadPrice{
+    font-weight: 500;
+    font-size: 14px;
+    color: #3C4852;
+}
+
+.limitedOfferContainer{
+    padding: 5px 20px;
+    margin: 10px 0px;
+    border:2px solid #FF0000;
+    color: #DE4313;
+    border-radius: 8px;
+
+    background:  linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+}
+
+.limitedOfferContainerHeadText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.limitedOfferContainerHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.limitedOfferContainerBotton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.limitedOfferContainerBottonText{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.totalPrice{
+    font-size: 18px;
+    font-weight: 500;
+    color: #3C4852;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    margin: 10px 0px;
+}
+
+.cancleBtn{
+    color: #F77171;
+    border: 2px solid #F77171;
+    background-color: white;
+}
+
+.proceedBtn{
+    color: white;
+    background-color: #47BA68;
+    border: none;
+}
+
+.cancleBtn,.proceedBtn{
+    flex: 1;
+    padding: 12px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-width: max-content;
+}
+
+.subscribe{
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+.subscribeFooter{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+
+
+.rezropayimage{
+    padding-top: 16px;
+    width: 100px;
+    height: 48.688px;
+    flex-shrink: 0;
+    bottom: 40px;
+}
+
